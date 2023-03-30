@@ -14,8 +14,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use("/chats", getCompletionChat, getImages);
 
-app.listen(3001, () => {
-  console.log(`Started on port 3001`);
+app.listen(process.env.PORT, () => {
+  console.log(`Started on port ${process.env.PORT}`);
 });
 
 export default app;
