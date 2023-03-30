@@ -3,6 +3,9 @@ import { getCompletionChat, getImages } from "./routes";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 
+require("dotenv").config();
+console.log("Loaded environment variables", process.env);
+
 var app = express();
 app.use(cors());
 app.options("*", cors());
