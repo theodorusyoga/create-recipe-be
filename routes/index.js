@@ -2,7 +2,7 @@ import { Router } from "express";
 import axios from "axios";
 
 const router = Router();
-const API_KEY = "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";
+const API_KEY = "xxx";
 const STATIC_API_KEY = "bd7a997a-8762-47fb-92de-b3b88bf4a0ea";
 
 export const authMiddleware = (req, res, next) => {
