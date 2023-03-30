@@ -48,7 +48,7 @@ export const getImages = router.post(
         req.body,
         {
           headers: {
-            Authorization: `Bearer ${API_KEY}`,
+            Authorization: `Bearer ${process.env.CHATGPT_API_KEY}`,
           },
         }
       );
